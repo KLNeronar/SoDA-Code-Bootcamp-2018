@@ -17,7 +17,7 @@ phases:
       - cd ..
   post_build:
     commands:
-      - aws s3 sync ./frontend/dist <your s3>
+      - aws s3 sync ./frontend/dist myapplication-env.6287mmdcid.us-east-1.elasticbeanstalk.com
 
 artifacts:
   files:
